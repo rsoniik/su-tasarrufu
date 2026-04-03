@@ -37,20 +37,21 @@ Harcamaların kaydedilmesi ve global state'in güncellenmesi
 ### Göl Metaforu 
 Toplam su kapasitesi, görsel bir "kuruma" algoritması ile UI'a yansıtılır. 
 
-## 📦 Kurulum
+## 📦 Kurulum (Hesap açma gerektirmez)
 Projeyi yerelinizde çalıştırmak için:
 
 - Dosyaları indirin:
 [su_tasarrufu_v1.zip](https://github.com/rsoniik/su-tasarrufu/archive/refs/heads/main.zip)
 - İndirdiğiniz dosyayı klasöre çıkarın. 
   
-- Bağımlılıkları yükleyin:
+- Bağımlılıkları yükleyin (terminal üzerinden):
    ```bash   
    npm install
    ```
-
-- Uygulamayı başlatın:
+- Uygulamayı başlatın (terminal üzerinden):
   ```bash
    npx expo start
    ```
-  
+- Telefonununuza [Expo Go](https://expo.dev/go) uygulamasının son sürümünü indirin (minimum sürüm SDK 55 olmalı).
+- Ekranda çıkan QR kodu telefonunuzdaki Expo Go uygulaması üzerinden okutun.
+- Hazırsınız!
