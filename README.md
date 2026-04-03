@@ -54,13 +54,15 @@ Projeyi yerelinizde çalıştırmak için:
 
 - Dosyaları indirin:
 [su_tasarrufu_v1.zip](https://github.com/rsoniik/su-tasarrufu/archive/refs/heads/main.zip)
-- İndirdiğiniz dosyayı klasöre çıkarın. 
+- İndirdiğiniz dosyayı klasöre çıkarın.
+- Windows kullanıyorsanız bilgisayarınızın arama çubuğuna terminal yazarak açın.
+- Aşağıdaki terminal üzerinden yazmanız gereken komutları kopyalayıp terminale yapıştırın.
   
-- Bağımlılıkları yükleyin (terminal üzerinden):
+  - Bağımlılıkları yükleyin (terminal üzerinden):
    ```bash   
    npm install
    ```
-- Uygulamayı başlatın (terminal üzerinden):
+  - Uygulamayı başlatın (terminal üzerinden):
   ```bash
    npx expo start
    ```
