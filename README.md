@@ -35,8 +35,20 @@ Harcamaların kaydedilmesi ve global state'in güncellenmesi
   }, []);
    ```
 ### Göl Metaforu 
-Toplam su kapasitesi, görsel bir "kuruma" algoritması ile UI'a yansıtılır. 
+Toplam su kapasitesi, görsel bir "kuruma" algoritması ile UI'a yansıtılır. Görsellerin hepsi elle çizildi!
 
+```bash
+   // @/ekranlar/GolPanosu.tsx
+
+const SEVIYE_GORSEL: Record<GolSeviye, number> = {
+  col: require('../../assets_gol/1.png'),
+  kuru: require('../../assets_gol/2.png'),
+  cimen: require('../../assets_gol/3.png'),
+  cicek: require('../../assets_gol/4.png'),
+  agac: require('../../assets_gol/5.png'),
+  hayvan: require('../../assets_gol/6.png'),
+};
+   ```
 ## 📦 Kurulum (Hesap açma gerektirmez)
 Projeyi yerelinizde çalıştırmak için:
 
