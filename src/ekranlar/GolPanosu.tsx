@@ -8,14 +8,14 @@ import { ayIcindeKalanGun } from '@/domain/aylikDongu';
 
 type GolSeviye = 'col' | 'kuru' | 'cimen' | 'cicek' | 'agac' | 'hayvan';
 
-/** 6 farklı sahne — her biri ayrı görsel (Unsplash, ağ gerekir) */
-const SEVIYE_GORSEL: Record<GolSeviye, string> = {
-  col: 'https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=960&q=80',
-  kuru: 'https://images.unsplash.com/photo-1614005216618-6a20b933c578?w=960&q=80',
-  cimen: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=960&q=80',
-  cicek: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=960&q=80',
-  agac: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=960&q=80',
-  hayvan: 'https://images.unsplash.com/photo-1504208434029-ea599e920ef7?w=960&q=80',
+/** 6 farklı sahne — yerel PNG (offline) */
+const SEVIYE_GORSEL: Record<GolSeviye, number> = {
+  col: require('../../assets_gol/1.png'),
+  kuru: require('../../assets_gol/2.png'),
+  cimen: require('../../assets_gol/3.png'),
+  cicek: require('../../assets_gol/4.png'),
+  agac: require('../../assets_gol/5.png'),
+  hayvan: require('../../assets_gol/6.png'),
 };
 
 const SEVIYE_AD: Record<GolSeviye, string> = {
@@ -64,7 +64,7 @@ export default function GolPanosu() {
     () => seviyeHesapla(kalanHam, aylikToplamSu),
     [kalanHam, aylikToplamSu],
   );
-  const gorselUri = SEVIYE_GORSEL[seviye];
+  const gorselKaynak = SEVIYE_GORSEL[seviye];
 
   /** Bar doluluk: negatif veya bitti → 0; fazla su yok (üst sınır 100%) */
   const barOran = aylikToplamSu > EPS ? Math.max(0, Math.min(1, kalanHam / aylikToplamSu)) : 0;
@@ -86,7 +86,7 @@ export default function GolPanosu() {
       <View style={styles.gorselSarici}>
         <View style={styles.gorselWrapper}>
           <Image
-            source={{ uri: gorselUri }}
+            source={gorselKaynak}
             style={styles.gorsel}
             contentFit="cover"
             transition={220}
