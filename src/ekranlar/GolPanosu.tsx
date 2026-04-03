@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
   },
   canBarDis: {
-    width: '100%',
+    width: '90%',
     height: 44,
     borderRadius: 16,
     overflow: 'hidden',
