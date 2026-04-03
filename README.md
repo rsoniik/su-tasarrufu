@@ -49,12 +49,22 @@ const SEVIYE_GORSEL: Record<GolSeviye, number> = {
   hayvan: require('../../assets_gol/6.png'),
 };
    ```
-## 📦 Kurulum (Hesap açma gerektirmez)
-Projeyi yerelinizde çalıştırmak için:
+## 📦 Kurulum (Hesap açma gerektirmez / Node.js + Expo Go kurulumu gerektirir)
+Projeyi yerelinizde çalıştırmak için (Windows önerilir):
 
 - Dosyaları indirin:
 [su_tasarrufu_v1.zip](https://github.com/rsoniik/su-tasarrufu/archive/refs/heads/main.zip)
 - İndirdiğiniz dosyayı klasöre çıkarın.
+- Eğer bilgisayarınızda [Node.js](https://nodejs.org/tr) kurulu değilse (kuruluysa bu aşamayı atlayabilirsiniz):
+  
+  - [Node.js (LTS versiyonu)](https://nodejs.org/tr/download) indirin.
+  - Dosyanın kurulumunu tamamlayın.
+  - Kurulum bittikten sonra terminale aşağıdakini kopyalayın. Eğer v20.x.x gibi bir sayı görüyorsanız işlem tamamdır! (terminalin ne olduğundan emin değilseniz aşağıya bakın!)
+    
+  ```bash   
+   node -v
+   ```  
+  
 - Windows kullanıyorsanız bilgisayarınızın arama çubuğuna terminal yazarak açın.
 - Aşağıdaki terminal üzerinden yazmanız gereken komutları kopyalayıp terminale yapıştırın.
   
