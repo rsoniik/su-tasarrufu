@@ -58,11 +58,15 @@ Projeyi yerelinizde çalıştırmak için:
 - Windows kullanıyorsanız bilgisayarınızın arama çubuğuna terminal yazarak açın.
 - Aşağıdaki terminal üzerinden yazmanız gereken komutları kopyalayıp terminale yapıştırın.
   
-  - Bağımlılıkları yükleyin (terminal üzerinden):
-   ```bash   
+  - Doğru klasörü seçin:
+  ```bash   
+   cd su_tasarrufu_v1
+   ```
+  - Bağımlılıkları yükleyin:
+  ```bash   
    npm install
    ```
-  - Uygulamayı başlatın (terminal üzerinden):
+  - Uygulamayı başlatın:
   ```bash
    npx expo start
    ```
