@@ -40,10 +40,9 @@ Toplam su kapasitesi, görsel bir "kuruma" algoritması ile UI'a yansıtılır.
 ## 📦 Kurulum
 Projeyi yerelinizde çalıştırmak için:
 
-- Depoyu klonlayın:
-  ```bash
-   git clone https://github.com/rsoniik/su-tasarrufu.git
-   ```
+- [Dosyaları indirin](https://github.com/rsoniik/su-tasarrufu/archive/refs/heads/main.zip)
+- İndirdiğiniz dosyayı klasöre çıkarın. 
+  
 - Bağımlılıkları yükleyin:
    ```bash   
    npm install
