@@ -84,7 +84,7 @@ export default function GolPanosu() {
   return (
     <View style={[styles.kart, { backgroundColor: kart }]}>
       <View style={styles.gorselSarici}>
-        <View style={[styles.gorselWrapper, { backgroundColor: '#1f2a30' }]}>
+        <View style={styles.gorselWrapper}>
           <Image
             source={{ uri: gorselUri }}
             style={styles.gorsel}
@@ -93,20 +93,20 @@ export default function GolPanosu() {
             accessibilityLabel={`${golAd} — ${seviyeBaslik}`}
           />
         </View>
+      </View>
 
-        <View style={[styles.canBarDis, { backgroundColor: barZemin }]}>
-          <View style={[styles.canBarIc, { width: `${barYuzde}%`, backgroundColor: barMavi }]} />
-          <View style={styles.canBarYaziSar} pointerEvents="none">
-            <Text style={[styles.canBarSol, { color: barUstYazi }]} numberOfLines={1}>
-              {formatLitreGoster(kalanHam)}
-            </Text>
-            <Text style={[styles.canBarOrta, { color: barUstYazi }]} numberOfLines={1}>
-              |
-            </Text>
-            <Text style={[styles.canBarSag, { color: barUstYazi }]} numberOfLines={1}>
-              {formatLitreGoster(aylikToplamSu)}
-            </Text>
-          </View>
+      <View style={[styles.canBarDis, { backgroundColor: barZemin }]}>
+        <View style={[styles.canBarIc, { width: `${barYuzde}%`, backgroundColor: barMavi }]} />
+        <View style={styles.canBarYaziSar} pointerEvents="none">
+          <Text style={[styles.canBarSol, { color: barUstYazi }]} numberOfLines={1}>
+            {formatLitreGoster(kalanHam)}
+          </Text>
+          <Text style={[styles.canBarOrta, { color: barUstYazi }]} numberOfLines={1}>
+            |
+          </Text>
+          <Text style={[styles.canBarSag, { color: barUstYazi }]} numberOfLines={1}>
+            {formatLitreGoster(aylikToplamSu)}
+          </Text>
         </View>
       </View>
 
@@ -139,9 +139,8 @@ const styles = StyleSheet.create({
   },
   gorselWrapper: {
     width: '100%',
-    aspectRatio: 1.35,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
+    height: 240,
+    borderRadius: 16,
     overflow: 'hidden',
   },
   gorsel: {
@@ -150,10 +149,11 @@ const styles = StyleSheet.create({
   canBarDis: {
     width: '100%',
     height: 44,
-    borderBottomLeftRadius: 16,
-    borderBottomRightRadius: 16,
+    borderRadius: 16,
     overflow: 'hidden',
     justifyContent: 'center',
+    marginTop: 10,
+    marginHorizontal: 16,
   },
   canBarIc: {
     position: 'absolute',
