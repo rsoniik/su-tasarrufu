@@ -54,6 +54,3 @@ Projeyi yerelinizde çalıştırmak için:
    npx expo start
    ```
   
-## Uygulama hakkında
-
-
