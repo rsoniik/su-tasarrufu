@@ -40,7 +40,8 @@ Toplam su kapasitesi, görsel bir "kuruma" algoritması ile UI'a yansıtılır.
 ## 📦 Kurulum
 Projeyi yerelinizde çalıştırmak için:
 
-- [Dosyaları indirin](https://github.com/rsoniik/su-tasarrufu/archive/refs/heads/main.zip)
+- Dosyaları indirin:
+[su_tasarrufu_v1.zip](https://github.com/rsoniik/su-tasarrufu/archive/refs/heads/main.zip)
 - İndirdiğiniz dosyayı klasöre çıkarın. 
   
 - Bağımlılıkları yükleyin:
