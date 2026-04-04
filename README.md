@@ -25,7 +25,7 @@ Harcamaların kaydedilmesi ve global state'in güncellenmesi
 ```bash
    // @/domain/SuUygulamaContext.tsx
 
-   const harcamaEkle = useCallback((litre: number) => {
+  const harcamaEkle = useCallback((litre: number) => {
     if (litre <= 0) return;
     setDurum((prev) => {
       const next = { ...prev, toplamHarcama: prev.toplamHarcama + litre };
