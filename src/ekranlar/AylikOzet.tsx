@@ -5,9 +5,6 @@ import { GOLLER } from '@/constants/suSabitle';
 import { LIDERLIK_MIN_GUN } from '@/domain/aylikDongu';
 import { useSuUygulama } from '@/context/SuUygulamaContext';
 
-/** Geliştirme / test: örnek harcama ekle */
-const DEMO_LITRE = 25;
-
 export default function AylikOzet() {
   const scheme = useColorScheme();
   const koyu = scheme === 'dark';
@@ -79,16 +76,6 @@ export default function AylikOzet() {
         </Text>
       </View>
 
-      <Pressable
-        onPress={() => harcamaEkle(DEMO_LITRE)}
-        style={({ pressed }) => [
-          styles.demo,
-          { backgroundColor: koyu ? '#3a3a3c' : '#e5e5ea', opacity: pressed ? 0.85 : 1 },
-        ]}>
-        <Text style={{ color: metin, fontWeight: '600' }}>
-          Demo: +{DEMO_LITRE} L harcama ekle (mantığı dene)
-        </Text>
-      </Pressable>
     </ScrollView>
   );
 }
