@@ -59,19 +59,15 @@ Projeyi yerelinizde çalıştırmak için (Windows önerilir):
   
   - [Node.js (LTS versiyonu)](https://nodejs.org/tr/download) indirin.
   - Dosyanın kurulumunu tamamlayın.
-  - Kurulum bittikten sonra terminale aşağıdakini kopyalayın. Eğer v20.x.x gibi bir sayı görüyorsanız işlem tamamdır! (terminalin ne olduğundan emin değilseniz aşağıya bakın!)
+  - Kurulum bittikten sonra terminale aşağıdakini kopyalayın. Eğer v20.x.x gibi bir sayı görüyorsanız işlem tamamdır! (terminalin ne olduğundan emin değilseniz bilgisayarınızın arama çubuğundan aratarak açabilirsiniz)
     
   ```bash   
    node -v
    ```  
   
-- Windows kullanıyorsanız bilgisayarınızın arama çubuğuna terminal yazarak açın.
+- Klasöre çıkardığınız dosyaya sağ tıklayın ve terminalde açın.
 - Aşağıdaki terminal üzerinden yazmanız gereken komutları kopyalayıp terminale yapıştırın.
   
-  - Doğru klasörü seçin:
-  ```bash   
-   cd su_tasarrufu_v1
-   ```
   - Bağımlılıkları yükleyin:
   ```bash   
    npm install
