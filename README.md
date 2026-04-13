@@ -65,7 +65,9 @@ Projeyi yerelinizde çalıştırmak için (Windows önerilir):
    node -v
    ```  
   
-- Klasöre çıkardığınız dosyaya sağ tıklayın ve terminalde açın.
+- Çıkardığınız klasöre sağ tıklayın ve terminalde açın.
+  
+  <img src="terminal.png" alt="Terminalde Açma" width="500">
 - Aşağıdaki terminal üzerinden yazmanız gereken komutları kopyalayıp terminale yapıştırın.
   
   - Bağımlılıkları yükleyin:
